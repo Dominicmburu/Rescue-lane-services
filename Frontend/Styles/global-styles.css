@@ -1,0 +1,138 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Arial', sans-serif; /* Default font */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #000; /* Global background color */
+    color: #fff; /* Global text color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Links inherit text color */
+    cursor: pointer;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-orange {
+    color: #ffa500; /* Highlight color for important text */
+  }
+  
+  .bg-dark {
+    background-color: #111; /* Dark background for sections */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #ffa500; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ffba33; /* Lighter hover color */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Spacing */
+  .section {
+    padding: 50px 20px;
+  }
+  
+  .section-dark {
+    background-color: #111; /* Dark background for contrast */
+  }
+  
+  .section-light {
+    background-color: #222; /* Slightly lighter background */
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; /* Heading font */
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #ffa500; /* Highlight headings in orange */
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 28px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #000;
+    background-color: #ffa500;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ffba33;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    .section {
+      padding: 30px 10px;
+    }
+  }
+  
