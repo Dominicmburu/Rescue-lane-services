@@ -1,34 +1,33 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter as Router, Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom'; 
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Services from './Pages/Services/services';
+import Contact from './Pages/ContactForm/ContactForm';
 
-// Components
-import Header from './Components/Header/Header';
-import Services from './Components/Services/services';
-import Testimonials from './Components/Testimonials/Testimonials';
-import ContactForm from './Components/ContactForm/ContactForm';
-import Footer from './Components/Footer/Footer';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/services",
+    element: <Services />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
 
-const App: React.FC = () => {
+function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <section id="services">
-          <h2>Our Services</h2>
-          <Services />
-        </section>
-        <section id="testimonials">
-          <h2>What Our Customers Say</h2>
-          <Testimonials />
-        </section>
-        <section id="contact">
-          <h2>Contact Us</h2>
-          <ContactForm />
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <RouterProvider router={router} /> 
   );
-};
+}
 
 export default App;
