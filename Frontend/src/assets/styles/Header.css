@@ -1,0 +1,49 @@
+.header {
+  background-color: #000;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-info {
+  flex: 1;
+  color: white;
+}
+
+.header-info-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header-info-subtitle {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.header-nav {
+  background-color: #4b2b1d;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-item .nav-link.active {
+  color: orange;
+  font-weight: bold;
+}
+
+.nav-item .nav-link:hover {
+  color: orange;
+}
