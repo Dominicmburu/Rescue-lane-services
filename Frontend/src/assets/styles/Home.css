@@ -1,0 +1,252 @@
+/* HERO SECTION */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    padding-left: 50px;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ff9900;
+  }
+  
+  .hero-overlay p {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #ff9900;
+  }
+  
+  .hero-overlay button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: #cc7a00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-overlay button:hover {
+    background-color: #cc7a00;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 15s infinite;
+    z-index: 1;
+    filter: brightness(50%);
+  }
+  .emergency-box {
+    background-color: #a0522d; /* Saddle brown color */
+    color: #fff; /* White text */
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Add spacing from other elements */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .emergency-box p {
+    margin: 0;
+  }
+  
+  .emergency-box p:first-of-type {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .emergency-box .emergency-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* ANIMATION FOR SLIDESHOW */
+  @keyframes slideshow {
+    0% {
+      background-image: url("../Images/Homepage/hero1.jpg");
+    }
+    33% {
+      background-image: url("../Images/Homepage/hero2.jpg");
+    }
+    66% {
+      background-image: url("../Images/Homepage/hero3.jpg");
+    }
+    100% {
+      background-image: url("../Images/Homepage/br7.jpg");
+    }
+  }
+  
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(63, 46, 46);
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: wheat;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .about-section button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .about-section button:hover {
+    background-color: #cc7a00;
+  }
+  
+  /* SERVICES SECTION */
+  .services-section {
+    padding: 50px 20px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    max-width: 200px;
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .service-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ff9900;
+  }
+  
+  .service-item p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  /* TESTIMONIALS SECTION */
+  .testimonials-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-item {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .testimonial-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .testimonial-item span {
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  footer a {
+    color: #ff9900;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
