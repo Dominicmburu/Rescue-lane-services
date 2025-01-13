@@ -12,6 +12,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="header-logo d-flex align-items-center">
           <FaTruck size={40} color="lightblue" />
+          <span className='header-info-title text-warning'>RESCUE LANE</span>
         </div>
 
         {/* Open Time */}
@@ -32,7 +33,8 @@ const Header: React.FC = () => {
           <div className="ms-2">
             <span className="header-info-title text-warning">CALL US NOW</span>
             <br />
-            <span className="header-info-subtitle">0759595577</span>
+            <p><a href="tel:0759595577">0759595577</a></p>
+            
           </div>
         </div>
       </div>
