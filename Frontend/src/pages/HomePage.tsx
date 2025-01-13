@@ -1,7 +1,12 @@
 import React from 'react';
 import Layout from '../Components/Layout';
 import "../assets/styles/Home.css"
-
+import roadsideAssistanceImage from "../assets/images/Homepage/br5.jpg";
+import deliveriesImage from "../assets/images/Homepage/deliveries.jpg";
+import motorcycleTowingImage from "../assets/images/Homepage/motorcycle-towing.jpg";
+import flatbedTowingImage from "../assets/images/Homepage/flatbed-towing.jpg";
+import personImage from "../assets/images/Homepage/person-avatar.jpg"; 
+import quoteIcon from "../assets/images/Homepage/quote-icon.png"; 
 const HomePage: React.FC = () => {
   return (
     <Layout>
@@ -35,35 +40,54 @@ const HomePage: React.FC = () => {
         <h2>We Specialize In</h2>
         <div className="service-list">
           <div className="service-item">
-            <img src="roadside-assistance.jpg" alt="Roadside Assistance" />
+            <img src={roadsideAssistanceImage} alt="Roadside Assistance" />
             <p>Roadside Assistance</p>
           </div>
           <div className="service-item">
-            <img src="deliveries.jpg" alt="Deliveries" />
+            <img src={deliveriesImage} alt="Deliveries" />
             <p>Deliveries</p>
           </div>
           <div className="service-item">
-            <img src="motorcycle-towing.jpg" alt="Motorcycle Towing" />
+            <img src={motorcycleTowingImage} alt="Motorcycle Towing" />
             <p>Motorcycle Towing</p>
           </div>
           <div className="service-item">
-            <img src="flatbed-towing.jpg" alt="Flatbed Towing" />
+            <img src={flatbedTowingImage} alt="Flatbed Towing" />
             <p>Flatbed Towing</p>
           </div>
         </div>
       </section>
 
       <section className="testimonials-section">
-        <h2>Testimonials</h2>
-        <blockquote>
-          <p>
-            "Rescue Lane provided exceptional service when my car broke down in the middle of nowhere. Highly
-            recommended!"
-          </p>
-          <footer>– Vivian Aoko</footer>
-        </blockquote>
-      </section>
-    </div>
+          <h2>Testimonials</h2>
+          <div className="testimonial-container">
+            <img
+              src={quoteIcon}
+              alt="Quote Icon"
+              className="quote-icon-left"
+            />
+            <div className="testimonial-content">
+              <img
+                src={personImage}
+                alt="Testimonial Person"
+                className="person-image"
+              />
+              <h3>Vivian Aoko</h3>
+              <p>
+                "Rescue Lane provided exceptional service when my car broke down
+                in Nairobi's outskirts. Highly recommended! Their team was
+                professional, courteous, and quick to help. I feel safer knowing
+                they are just a phone call away!"
+              </p>
+            </div>
+            <img
+              src={quoteIcon}
+              alt="Quote Icon"
+              className="quote-icon-right"
+            />
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };
