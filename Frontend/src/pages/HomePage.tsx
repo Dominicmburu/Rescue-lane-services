@@ -61,11 +61,6 @@ const HomePage: React.FC = () => {
       <section className="testimonials-section">
           <h2>Testimonials</h2>
           <div className="testimonial-container">
-            <img
-              src={quoteIcon}
-              alt="Quote Icon"
-              className="quote-icon-left"
-            />
             <div className="testimonial-content">
               <img
                 src={personImage}
