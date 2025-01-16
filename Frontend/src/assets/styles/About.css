@@ -1,0 +1,92 @@
+.about-page {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-header {
+    position: relative;
+    height: 300px; /* Increased height for more visibility */
+    background-image: url("../Images/About us/header.jpeg"); /* Replace with the actual background image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-header h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000;
+    margin: 0;
+    z-index: 2;
+  }
+  
+  .about-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text contrast */
+    z-index: 1;
+  }
+  
+  
+  .about-section {
+    margin-bottom: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .about-team {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .about-team h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .about-team img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .about-team p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .about-team img {
+      width: 100%;
+    }
+  
+    .about-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

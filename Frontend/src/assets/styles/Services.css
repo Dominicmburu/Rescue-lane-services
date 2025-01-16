@@ -1,0 +1,132 @@
+.services-page {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .services-header {
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+    color: #ffcc00;
+    background-image: url('../Images/Services/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .services-header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .service-card {
+    background-color: #222;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-card img {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #bbb;
+  }
+  
+  .additional-services {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  .additional-services h2 {
+    color: #ffcc00;
+  }
+  
+  .additional-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .additional-services ul li {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section {
+    margin: 20px 0;
+    background-image: url('../Images/Services/pricing.avif');
+  }
+  
+  .pricing-section h2 {
+    text-align: center;
+    color: #ffcc00;
+  }
+  
+  .pricing-tables {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pricing-table {
+    background-color: #9ab358;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .pricing-table h3 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pricing-table th,
+  .pricing-table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #444;
+    color: #fff;
+  }
+  
+  .pricing-table th {
+    background-color: #222;
+  }
+  
+  .pricing-table td {
+    background-color: #121212;
+  }
+  
